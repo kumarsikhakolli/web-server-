@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sb {
+            background-color: aqua;
+            height: 20px;
+            width: 20px;
+            margin-top: 25px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .name-title {
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 25px;
+            justify-content: flex-end;
+            flex-grow: 2;
+        }
+
+        .links a {
+            margin-left: 50px;
+            font-size: 18px;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .name-title {
+                font-size: 20px;
+                margin-top: 10px;
+                margin-left: 5px;
+            }
+
+            .links a {
+                margin-left: 20px;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .sb {
+                margin-top: 15px;
+                margin-left: 0;
+            }
+
+            .name-title {
+                margin-left: 0;
+                margin-bottom: 10px;
+                font-size: 18px;
+            }
+
+            .links {
+                margin: 10px 0;
+                justify-content: center;
+            }
+
+            .links a {
+                margin-left: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sb"></div>
+        <div class="name-title">
+            <strong>U Learn</strong>
+            <h6 style="margin: 8px;">/ Online Course Platform</h6>
+        </div>
+        <div class="links">
+            <a href="home.html" target="center">About ULearn</a>
+            <a href="courses.html" target="center">Courses</a>
+            <a href="plans.html" target="center">Plans&prices</a>
+            <a href="register.html" target="center">Register&login</a>
+            <a href="search.html" target="center">Search Courses</a>  
+        </div>
+    </div>
+</body>
+</html>

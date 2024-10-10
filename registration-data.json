@@ -1,0 +1,47 @@
+[
+  {
+    "fullname": null,
+    "email": "as@gmail.com",
+    "password": "123"
+  },
+  {
+    "fullname": "fg",
+    "email": "221fa04394@gmail.com",
+    "password": "123"
+  },
+  {
+    "fullname": "fg",
+    "email": "as@gmail.com",
+    "password": "123"
+  },
+  {
+    "fullname": "221fa04394",
+    "email": "a@gmail.com",
+    "password": "568"
+  },
+  {
+    "fullname": "amar",
+    "email": "221fa04394@gmail.com",
+    "password": "123"
+  },
+  {
+    "fullname": "amar",
+    "email": "as@gmail.com",
+    "password": "521"
+  },
+  {
+    "fullname": null,
+    "email": null,
+    "password": null
+  },
+  {
+    "fullname": "kr",
+    "email": "kr@gmail.com",
+    "password": "654"
+  },
+  {
+    "fullname": "ap",
+    "email": "ap@gmail.com",
+    "password": "ap"
+  }
+]

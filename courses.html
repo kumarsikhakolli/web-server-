@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Page</title>
+    <link rel="stylesheet" href="courses.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.course-box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(20% - 1rem); 
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.course-box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.course-box p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.course-box:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media (max-width: 1200px) {
+    .course-box {
+        width: calc(25% - 1rem); /* Each box takes 25% of the width for smaller screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .course-box {
+        width: calc(33.33% - 1rem); /* Each box takes 33% for tablet screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .course-box {
+        width: calc(50% - 1rem); /* Each box takes 50% of the width for mobile screens */
+    }
+}
+
+</style>
+<style>
+    .sb {
+        background-color: aqua;
+        height: 20px;
+        width: 20px;
+        margin-top: 25px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .name-title {
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 25px;
+        justify-content: flex-end;
+        flex-grow: 2;
+    }
+
+    .links a {
+        margin-left: 50px;
+        font-size: 18px;
+    }
+
+    /* Media queries for responsiveness */
+    @media (max-width: 768px) {
+        .name-title {
+            font-size: 20px;
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+
+        .links a {
+            margin-left: 20px;
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .sb {
+            margin-top: 15px;
+            margin-left: 0;
+        }
+
+        .name-title {
+            margin-left: 0;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .links {
+            margin: 10px 0;
+            justify-content: center;
+        }
+
+        .links a {
+            margin-left: 10px;
+            font-size: 14px;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="sb"></div>
+    <div class="name-title">
+        <strong>U Learn</strong>
+        <h6 style="margin: 8px;">/ Online Course Platform</h6>
+    </div>
+    <div class="links">
+        <a href="home.html" target="center">About ULearn</a>
+        <a href="courses.html" target="center">Courses</a>
+        <a href="plans.html" target="center">Plans&prices</a>
+        <a href="register.html" target="center">Register&login</a>
+        <a href="search.html" target="center">Search Courses</a>  
+    </div>
+</div>
+</body>
+<body>
+    <div class="container">
+        <header>
+            <h1>Online Course Platform</h1>
+        </header>
+        <main>
+            <h2>Our Courses</h2>
+            <div class="courses-container">
+                <div class="course-box" onclick="openCourse('https://youtube.com/playlist?list=PLVlQHNRLflP8IGz6OXwlV_lgHgc72aXlh&si=wsFVzjmrVeAoLiXX')">
+                    <img src="html.jpg" alt="Course 1">
+                    <p>Mern Stack full course</p>
+                </div>
+                <div class="course-box" onclick="openCourse('https://youtube.com/playlist?list=PLDzeHZWIZsTo0wSBcg4-NMIbC0L8evLrD&si=IUDjsB0xljEdpdXp')">
+                    <img src="c.jpg" alt="Course 2">
+                    <p>C Language full course</p>
+                </div>
+                <div class="course-box" onclick="openCourse('https://youtube.com/playlist?list=PLr6-GrHUlVf_ZNmuQSXdS197Oyr1L9sPB&si=HD78KPmnYpW995up')">
+                    <img src="html.jpg" alt="Course 20">
+                    <p>HTML full course</p>
+                </div>
+                <div class="course-box" onclick="openCourse('https://youtube.com/playlist?list=PLsyeobzWxl7pe_IiTfNyr55kwJPWbgxB5&si=k0M0bwUTazbOImMx')">
+                    <img src="java.jpg" alt="Course 2">
+                    <p>Java full course</p>
+                </div>
+                <div class="course-box" onclick="openCourse('https://youtube.com/playlist?list=PLGjplNEQ1it8-0CmoljS5yeV-GlKSUEt0&si=MnSQU3lQ6V-CAjw9')">
+                    <img src="py.jpg" alt="Course 2">
+                    <p>Python full course</p>
+                </div>
+                <div class="course-box" onclick="openCourse('https://youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ&si=16HMFpUsv6iK80AG')">
+                    <img src="c.jpg" alt="Course 2">
+                    <p>C++ full course</p>
+                </div>
+                <div class="course-box" onclick="openCourse('https://youtube.com/playlist?list=PLNn-3DeL6lp2V8H9xQ2jFOlypKMwsNMiP&si=dnBYDuRwP4YJG94h')">
+                    <img src="free.jpg" alt="Course 2">
+                    <p>Freelancing full course</p>
+                </div>
+                <div class="course-box" onclick="openCourse('https://youtube.com/playlist?list=PLW-zSkCnZ-gABGZU8--ISUauyewG40Yex&si=qIHKDP6XsiKGh9rJ')">
+                    <img src="adob.jpg" alt="Course 2">
+                    <p>Adobe Premiere Pro</p>
+                </div>
+                <div class="course-box" onclick="openCourse('https://youtube.com/playlist?list=PLW-zSkCnZ-gABGZU8--ISUauyewG40Yex&si=qIHKDP6XsiKGh9rJ')">
+                    <img src="dmbs.jpg" alt="Course 2">
+                    <p>DBMS Full course</p>
+                </div>
+                <div class="course-box" onclick="openCourse('https://youtube.com/playlist?list=PLW-zSkCnZ-gABGZU8--ISUauyewG40Yex&si=qIHKDP6XsiKGh9rJ')">
+                    <img src="ds.jpeg" alt="Course 2">
+                    <p>Data Structures</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Online Course Platform</p>
+        </footer>
+    </div>
+
+    <script>
+        
+        function openCourse(url) {
+            window.open(url, "_blank");
+        }
+    </script>
+    
+</body>
+</html>

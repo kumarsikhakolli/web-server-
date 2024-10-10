@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.course-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px;
+}
+
+.course-card {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+.course-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(20px); /* Initial slide from below */
+    animation: fadeInSlide 1s forwards; /* 1s delay */
+}
+
+.course-card h3 {
+    margin: 10px 0 5px 0;
+}
+
+.course-card p {
+    margin: 0 0 10px 0;
+}
+
+.course-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.course-card button:hover {
+    background-color: #0056b3;
+}
+
+@keyframes fadeInSlide {
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Slide to original position */
+    }
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .course-cards {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}
+</style>
+<body>
+    <div class="container">
+        <h1>Search for Courses</h1>
+        <input type="text" placeholder="Search for courses..." class="search-bar">
+
+        <h2>Top Searched Courses</h2>
+        <div class="course-cards">
+            <div class="course-card">
+                <img src="web-development.jpg" alt="Web Development" class="course-image">
+                <h3>Web Development</h3>
+                <p>Learn how to build dynamic websites using HTML, CSS, and JavaScript.</p>
+                <a href="plans.html"><button>Enroll Now</button></a>
+            </div>
+            <div class="course-card">
+                <img src="ds.jpeg" alt="Data Science" class="course-image">
+                <h3>Data Science</h3>
+                <p>Master the fundamentals of data analysis and machine learning.</p>
+                <a href="plans.html"><button>Enroll Now</button></a>
+            </div>
+            <div class="course-card">
+                <img src="grap.jpeg" alt="Graphic Design" class="course-image">
+                <h3>Graphic Design</h3>
+                <p>Create stunning visuals and enhance your design skills.</p>
+                <a href="plans.html"><button>Enroll Now</button></a>
+            </div>
+            <div class="course-card">
+                <img src="rob.jpg" alt="Robotics" class="course-image">
+                <h3>Robotics</h3>
+                <p>Explore the strategies for effective Robotics.</p>
+                <a href="plans.html"><button>Enroll Now</button></a>
+            </div>
+            <div class="course-card">
+                <img src="ele.jpg" alt="Electronics" class="course-image">
+                <h3>Electronics</h3>
+                <p>Explore the endless world of Electronics.</p>
+                <a href="plans.html"><button>Enroll Now</button></a>
+            </div>
+            <div class="course-card">
+                <img src="ab3.jpeg" alt="Digital Marketing" class="course-image">
+                <h3>Digital Marketing</h3>
+                <p>Explore the strategies for effective online marketing.</p>
+                <a href="plans.html"><button>Enroll Now</button></a>
+            </div>
+            <div class="course-card">
+                <img src="ab1.webp" alt="Finance" class="course-image">
+                <h3>Finance</h3>
+                <p>Explore the strategies for effective online financing.</p>
+                <a href="plans.html"><button>Enroll Now</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

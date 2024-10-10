@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Plans & Payment</title>
+    
+</head>
+<style>
+    /* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Pricing Section */
+.pricing-section {
+    padding: 50px;
+    background-color: #1a1a2e;
+    color: white;
+    text-align: center;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    padding: 30px;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    font-size: 2.5rem;
+}
+
+.card button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #00d9a5;
+    color: white;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #00b384;
+}
+
+/* Payment Section */
+.payment-section {
+    padding: 50px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.method {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.method img {
+    width: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 30px;
+    background-color: #00d9a5;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #00b384;
+}
+
+/* Congratulations Section */
+.congrats-section {
+    padding: 50px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.congrats-section h2 {
+    font-size: 2.5rem;
+    color: #00d9a5;
+}
+
+</style>
+<body>
+   
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        
+        <h1>Premium Plans</h1>
+        <p>Choose a plan that's right for you and get started immediately.</p>
+        <div class="pricing-cards">
+            <div class="card">
+                <h3>Free</h3>
+                <h2>$0</h2>
+                <p>15 Users</p>
+                <p>Feature 2</p>
+                <p>Feature 3</p>
+                <p>Feature 4</p>
+                <button onclick="openPayment()">Get Plan</button>
+            </div>
+            <div class="card">
+                <h3>Plus</h3>
+                <h2>$29</h2>
+                <p>15 Users</p>
+                <p>Feature 2</p>
+                <p>Feature 3</p>
+                <p>Feature 4</p>
+                <button onclick="openPayment()">Get Plan</button>
+            </div>
+            <div class="card">
+                <h3>Standard</h3>
+                <h2>$59</h2>
+                <p>15 Users</p>
+                <p>Feature 2</p>
+                <p>Feature 3</p>
+                <p>Feature 4</p>
+                <button onclick="openPayment()">Get Plan</button>
+            </div>
+            <div class="card">
+                <h3>Business</h3>
+                <h2>$79</h2>
+                <p>15 Users</p>
+                <p>Feature 2</p>
+                <p>Feature 3</p>
+                <p>Feature 4</p>
+                <button onclick="openPayment()">Get Plan</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="payment" class="payment-section" style="display: none;">
+        <h2>Select Payment Method</h2>
+        <div class="payment-methods">
+            <div class="method">
+                <input type="radio" name="payment" id="credit-card" checked>
+                <label for="credit-card"><img src="C:\Users\91970\OneDrive\Pictures\images.jpeg" alt="Credit Card"> Credit Card</label>
+            </div>
+            <div class="method">
+                <input type="radio" name="payment" id="paypal">
+                <label for="paypal"><img src="C:\Users\91970\OneDrive\Pictures\images.png" alt="Phone pe"> Phone pe</label>
+                
+            </div>
+            <div class="method">
+                <input type="radio" name="payment" id="net-banking">
+                <label for="net-banking"><img src="C:\Users\91970\OneDrive\Pictures\20230826131331_sbi.jpg" alt="Net Banking"> Net Banking</label>
+            </div>
+        </div>
+
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="card-name">Name on Card:</label>
+                <input type="text" id="card-name" required>
+            </div>
+            <div class="form-group">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" required>
+            </div>
+            <div class="form-group">
+                <label for="expiration">Expiration:</label>
+                <input type="text" id="expiration" placeholder="MM/YY" required>
+            </div>
+            <div class="form-group">
+                <label for="Mobile number">Mobile number:</label>
+                <input type="number" id="mobile number" required>
+            </div>
+            <button type="submit">Submit Payment</button>
+        </form>
+    </section>
+    
+
+    <!-- Congratulations Section -->
+    <section id="congrats" class="congrats-section" style="display: none;">
+        <h2>Congratulations!</h2>
+        <p>Your payment has been successfully processed, and you're now enrolled in the course.</p>
+    </section>
+
+    <script>
+        function openPayment() {
+            document.getElementById("pricing").style.display = "none";
+            document.getElementById("payment").style.display = "block";
+        }
+
+        document.getElementById("payment-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("payment").style.display = "none";
+            document.getElementById("congrats").style.display = "block";
+        });
+    </script>
+
+</body>
+</html>

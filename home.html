@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bb {
+            padding: 15px;
+            width: 100%;
+            display: flex;
+            
+        }
+        #b1, #b2 {
+            width: 50%;
+            padding: 20px;
+            height: 300px;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 20px;
+        }
+        .blue-button {
+            background-color: blue; 
+            color: white; 
+            padding: 10px 20px; 
+            border: none; 
+            border-radius: 25px; 
+            cursor: pointer; 
+            font-size: 16px; 
+        }
+        .blue-button:hover {
+            background-color: darkblue; 
+        }
+
+        
+        @media (max-width: 768px) {
+            #bb {
+                flex-wrap: wrap;
+            }
+            #b1, #b2 {
+                width: 100%;
+                height: auto; /* Allow height to adjust */
+            }
+            h1 {
+                font-size: 24px; /* Smaller heading size */
+            }
+            p {
+                font-size: 18px; /* Smaller paragraph size */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 20px; /* Even smaller heading size */
+            }
+            p {
+                font-size: 16px; /* Even smaller paragraph size */
+            }
+            .blue-button {
+                padding: 8px 16px; /* Smaller button padding */
+                font-size: 14px; /* Smaller font size for buttons */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="bb">
+        <div id="b1">
+            <h1>Your knowledge is worth <br>more with online courses.</h1>
+            <p>From meditation to personal finance, no matter your passion or skill set,<br> Kajabi has everything you need for online course creation. Create, market, and sell<br>
+                 online courses all from the same dashboard so you can turn your knowledge into income in record time.</p>
+                 <button class="blue-button">START FREE TRIALS</button>
+        </div>
+        <div id="b2">
+            <img src="ab1.webp" height="100%" width="90%">
+        </div>
+    </div>
+    <hr style="opacity:60%;">
+    <div id="bb">
+        <div id="b1">
+            <img src="ab2.jpeg" height="100%" width="90%">
+        </div>
+        <div id="b2">
+            <h1>Monetize your knowledge</h1>
+            <p>Kajabi helps you transform your knowledge into a polished,<br> profitable online course.<br>
+            With customizable templates and intuitive design tools, <br>creating a mini-course or even a full-blown signature program is quick and easy. <br>Want to start from absolute scratch? We've got you covered there too.
+            Stripe and PayPal integrations make selling your online course seamless, but Kajabi not taking a cut of your profits is priceless.</p>
+            <button class="blue-button">START FREE TRIALS</button>
+        </div>
+    </div>
+    <hr style="opacity:60%;">
+    <div id="bb">
+        <div id="b1">
+            <h1>Put your online course in their pocket</h1>
+            <p>Your customers are always on their phones, and now your course can be too.<br>
+                The Kajabi mobile app gives customers one-click access from wherever they are,<br>
+                 without having to remember passwords or rely on clunky mobile browsers. 
+                 <br>More progress for them means stronger testimonials and referrals for you.</p>
+                 <button class="blue-button">START FREE TRIALS</button>
+        </div>
+        <div id="b2">
+            <img src="ab3.jpeg" height="100%" width="70%">
+        </div>
+    </div>
+    <hr style="opacity:60%;">
+    <footer style="background-color: #f1f1f1; padding: 20px; text-align: center; border-top: 1px solid #ccc;">
+        <div>
+            <p>&copy; 2024 Your Online Course Platform. All rights reserved.</p>
+            <p>
+                <a href="/terms-of-service" style="margin: 0 15px; text-decoration: none; color: #007BFF;">Terms of Service</a> |
+                <a href="/privacy-policy" style="margin: 0 15px; text-decoration: none; color: #007BFF;">Privacy Policy</a> |
+                <a href="/contact" style="margin: 0 15px; text-decoration: none; color: #007BFF;">Contact Us</a>
+            </p>
+            <p>Follow us on:
+                <a href="https://www.facebook.com" style="margin: 0 5px; text-decoration: none; color: #007BFF;">Facebook</a> |
+                <a href="https://www.twitter.com" style="margin: 0 5px; text-decoration: none; color: #007BFF;">Twitter</a> |
+                <a href="https://www.instagram.com" style="margin: 0 5px; text-decoration: none; color: #007BFF;">Instagram</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
